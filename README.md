@@ -2,6 +2,8 @@
 
 Ce dépôt contient une maquette web développée dans le cadre de mon stage chez **StopTCA**, une entreprise engagée dans la lutte contre les troubles du comportement alimentaire (TCA).
 
+Il s'agit d'une **refonte partielle** de l'interface existante, intégrant uniquement les **éléments que la fondatrice a souhaité modifier ou améliorer**, dans le cadre d'une évolution progressive du site.
+
 ## Objectifs
 
 - Concevoir une interface claire, responsive et accessible  
