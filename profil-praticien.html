@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maquette - StopTCA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html"><img src="image/StopTCA-2.png" /></a>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    <nav>
+      <ul>
+        <li><a href="#">À propos</a></li>
+        <li><a href="#">Tarifs</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Rejoindre notre équipe</a></li>
+      </ul>
+    </nav>
+  
+    <div class="nav-buttons">
+      <a href="trouver_praticien.html"><button class="btn-patient">Trouver un praticien</button></a>
+      <a href="Connexion.html"><button class="btn-neutral">Se connecter</button></a>
+  
+      <!-- Bouton de traduction Google (personnalisé) -->
+      <div id="google_translate_element" class="translate-widget"></div>
+    </div>
+  </header>
+  <main>
+    <section class="section-container">
+    <div class="image-container">
+      <img src="image autre/1718032082.webp" alt="Marine Dunier">
+    </div>
+    <div class="text-content">
+      <h1>Prendre un rendez-vous <span>avec</span><br><span>Marine Dunier</span></h1>
+      <h2>Psychanalyste</h2>
+      <p>
+        Je suis Marine Dunier, formée en psychanalyse à la Fédération Freudienne de Psychanalyse, ma pratique s’oriente autour de l’esprit et du fonctionnement de chacun, des ressentis et émotions qui font de chaque individu un être à part entière. J’accompagne mes patients dans la compréhension et la résolution des conflits psychiques qui influencent leur vie quotidienne.
+      </p>
+      <div class="text-center" style="text-align: center; margin-top: 1.5rem;">
+        <button class="button" onclick="document.getElementById('modal').style.display='flex'">
+            <span>En savoir plus</span>
+        </button>
+    </div>
+    <!-- Modal -->
+     <div class="modal" id="modal" onclick="if(event.target == this) this.style.display='none'">
+        <div class="modal-content">
+            <button class="modal-close" onclick="document.getElementById('modal').style.display='none'">&times;</button>
+            <h2>À propos de ma pratique</h2>
+          
+            <p>
+              Je suis Marine Dunier, formée en psychanalyse à la Fédération Freudienne de Psychanalyse. Ma pratique s’oriente autour de l’esprit et du fonctionnement de chacun, des ressentis et émotions qui font de chaque individu un être à part entière.
+            </p>
+          
+            <p>
+              J’accompagne mes patients dans la compréhension et la résolution des conflits psychiques qui influencent leur vie quotidienne. Mon approche se veut humaine, bienveillante et respectueuse des singularités de chacun.
+            </p>
+          
+            <p>
+              Mon travail en tant que psychanalyste repose sur une écoute active et empathique, favorisant un espace de parole libre et sans jugement. Les séances se déroulent dans un cadre sécurisé et confidentiel où le patient peut explorer ses pensées, ses émotions et ses expériences passées.
+            </p>
+          
+            <p>
+              Mon rôle est de guider les patients vers une meilleure compréhension d’eux-mêmes, en mettant en lumière les conflits internes et les traumas refoulés qui influencent leur quotidien.
+            </p>
+          
+            <p>
+              Dans le cadre des TCA, de nombreux facteurs coexistent (personnels, culturels, sociaux…) et l’une des approches qui me semble importante est celle de l’environnement global : comprendre comment et pourquoi le trouble intervient à certains moments, peut-être plus qu’à d’autres.
+            </p>
+          
+            <p>
+              L’espace que je propose est un temps basé sur les mots, où vos mots sont écoutés et surtout entendus. Un temps suspendu, où tout peut être dit.
+            </p>
+          
+            <p>
+              Je m’engage à offrir un soutien continu et adapté, en tenant compte des spécificités de chaque individu et en respectant son rythme de progression. Pour cela, il me semble important de préciser que les séances de 45 min ou d’une heure sont plus adaptées.
+            </p>
+          </div>
+          
+        </div>
+    </section>
+
+<!-- Compétences -->
+<section class="competences-section">
+    <div class="container">
+      <div class="competences-grid">
+        
+        <!-- Patients -->
+        <div class="skills-list">
+          <h3>Compétences avec les patients</h3>
+          <ul>
+            <li>Thérapie de soutien</li>
+            <li>Thérapie analytique</li>
+            <li>Stress, angoisses, traumatismes</li>
+            <li>Anorexie</li>
+            <li>Boulimie</li>
+            <li>Hyperphagie</li>
+            <li>Image et perception du corps</li>
+            <li>Manque de confiance</li>
+            <li>Estime de soi</li>
+            <li>Mal-être</li>
+          </ul>
+        </div>
+  
+        <!-- Proches -->
+        <div class="skills-list">
+          <h3>Compétences avec les proches</h3>
+          <ul>
+            <li>Thérapie de soutien</li>
+            <li>Thérapie analytique</li>
+            <li>Gestion du stress</li>
+            <li>Angoisses liées aux TCA</li>
+            <li>Problèmes de communication</li>
+            <li>Inquiétude</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--RENDEZ-VOUS -->
+<section class="rdv-section">
+    <div class="rdv-step">
+      <div class="rdv-title">Première étape : Choisir la durée du rendez-vous</div>
+     <div class="rdv-buttons">
+  <button class="rdv-btn btn-30min" data-duration="30">
+    <span class="duration">30 <span class="unit">MINUTES</span></span><br>
+    <span class="price">pour <strong>45 €</strong></span>
+  </button>
+
+  <button class="rdv-btn btn-45min" data-duration="45">
+    <span class="duration">45 <span class="unit">MINUTES</span></span><br>
+    <span class="price">pour <strong>55 €</strong></span>
+  </button>
+
+  <button class="rdv-btn btn-60min" data-duration="60">
+    <span class="duration">1 <span class="unit">HEURE</span></span><br>
+    <span class="price">pour <strong>65 €</strong></span>
+  </button>
+</div>
+    </div>
+  
+    <div class="rdv-step">
+      <div class="rdv-title">Deuxième étape : Choisir le type de consultation</div>
+      <div class="type-consult">
+        <button>Téléphonique</button>
+        <button>Visiophonique</button>
+      </div>
+    </div>
+
+  
+    <div class="table-container">
+      <div class="accordion-title">Choisissez la date de votre consultation</div>
+      <!-- Version bureau (grille) -->
+       <div class="week-navigation">
+        <button id="prev-week">← Semaine précédente</button>
+        <button id="next-week">Semaine suivante →</button>
+      </div>
+      <div class="table-view" id="schedule-table">
+          <div class="date-column">
+            <div class="date-header">Mercredi 14 mai</div>
+            <!--durée 30min-->
+          <div class="slot-time" data-duration="30">15:00</div>
+          <div class="slot-time" data-duration="30">15:30</div>
+          <div class="slot-time" data-duration="30">16:00</div>
+          <div class="slot-time" data-duration="30">16:30</div>
+          <!--durée 45min-->
+          <div class="slot-time" data-duration="45">15:00</div>
+          <div class="slot-time" data-duration="45">15:45</div>
+          <div class="slot-time" data-duration="45">16:30</div>
+          <div class="slot-time" data-duration="45">17:15</div>
+          <!--durée 1heure-->
+          <div class="slot-time" data-duration="60">10:00</div>
+          <div class="slot-time" data-duration="60">11:00</div>
+          <div class="slot-time" data-duration="60">12:00</div>
+          <div class="slot-time" data-duration="60">13:00</div>
+          </div>
+          <div class="date-column">
+            <div class="date-header">Mercredi 11 juin</div>
+             <!--durée 30min-->
+          <div class="slot-time" data-duration="30">15:00</div>
+          <div class="slot-time" data-duration="30">15:30</div>
+          <div class="slot-time" data-duration="30">16:00</div>
+          <div class="slot-time" data-duration="30">16:30</div>
+          <!--durée 45min-->
+          <div class="slot-time" data-duration="45">15:00</div>
+          <div class="slot-time" data-duration="45">15:45</div>
+          <div class="slot-time" data-duration="45">16:30</div>
+          <div class="slot-time" data-duration="45">17:15</div>
+          <!--durée 1heure-->
+          <div class="slot-time" data-duration="60">10:00</div>
+          <div class="slot-time" data-duration="60">11:00</div>
+          <div class="slot-time" data-duration="60">12:00</div>
+          <div class="slot-time" data-duration="60">13:00</div>
+          </div>
+          <div class="date-column">
+            <div class="date-header">Jeudi 12 juin</div>
+              <!--durée 30min-->
+          <div class="slot-time" data-duration="30">15:00</div>
+          <div class="slot-time" data-duration="30">15:30</div>
+          <div class="slot-time" data-duration="30">16:00</div>
+          <div class="slot-time" data-duration="30">16:30</div>
+          <!--durée 45min-->
+          <div class="slot-time" data-duration="45">15:00</div>
+          <div class="slot-time" data-duration="45">15:45</div>
+          <div class="slot-time" data-duration="45">16:30</div>
+          <div class="slot-time" data-duration="45">17:15</div>
+          <!--durée 1heure-->
+          <div class="slot-time" data-duration="60">10:00</div>
+          <div class="slot-time" data-duration="60">11:00</div>
+          <div class="slot-time" data-duration="60">12:00</div>
+          <div class="slot-time" data-duration="60">13:00</div>
+          </div>
+          <div class="date-column">
+            <div class="date-header">Lundi 16 juin</div>
+             <!--durée 30min-->
+          <div class="slot-time" data-duration="30">15:00</div>
+          <div class="slot-time" data-duration="30">15:30</div>
+          <div class="slot-time" data-duration="30">16:00</div>
+          <div class="slot-time" data-duration="30">16:30</div>
+          <!--durée 45min-->
+          <div class="slot-time" data-duration="45">15:00</div>
+          <div class="slot-time" data-duration="45">15:45</div>
+          <div class="slot-time" data-duration="45">16:30</div>
+          <div class="slot-time" data-duration="45">17:15</div>
+          <!--durée 1heure-->
+          <div class="slot-time" data-duration="60">10:00</div>
+          <div class="slot-time" data-duration="60">11:00</div>
+          <div class="slot-time" data-duration="60">12:00</div>
+          <div class="slot-time" data-duration="60">13:00</div>
+          </div>
+          <div class="date-column">
+            <div class="date-header">Mardi 17 juin</div>
+              <!--durée 30min-->
+          <div class="slot-time" data-duration="30">15:00</div>
+          <div class="slot-time" data-duration="30">15:30</div>
+          <div class="slot-time" data-duration="30">16:00</div>
+          <div class="slot-time" data-duration="30">16:30</div>
+          <!--durée 45min-->
+          <div class="slot-time" data-duration="45">15:00</div>
+          <div class="slot-time" data-duration="45">15:45</div>
+          <div class="slot-time" data-duration="45">16:30</div>
+          <div class="slot-time" data-duration="45">17:15</div>
+          <!--durée 1heure-->
+          <div class="slot-time" data-duration="60">10:00</div>
+          <div class="slot-time" data-duration="60">11:00</div>
+          <div class="slot-time" data-duration="60">12:00</div>
+          <div class="slot-time" data-duration="60">13:00</div>
+          </div>
+          <div class="date-column">
+            <div class="date-header">Vendredi 19 juin</div>
+              <!--durée 30min-->
+          <div class="slot-time" data-duration="30">15:00</div>
+          <div class="slot-time" data-duration="30">15:30</div>
+          <div class="slot-time" data-duration="30">16:00</div>
+          <div class="slot-time" data-duration="30">16:30</div>
+          <!--durée 45min-->
+          <div class="slot-time" data-duration="45">15:00</div>
+          <div class="slot-time" data-duration="45">15:45</div>
+          <div class="slot-time" data-duration="45">16:30</div>
+          <div class="slot-time" data-duration="45">17:15</div>
+          <!--durée 1heure-->
+          <div class="slot-time" data-duration="60">10:00</div>
+          <div class="slot-time" data-duration="60">11:00</div>
+          <div class="slot-time" data-duration="60">12:00</div>
+          <div class="slot-time" data-duration="60">13:00</div>
+          </div>
+        </div>
+        <button class="confirm-button">Confirmer le rendez-vous</button>
+    </div>
+    <div class="arccordion-container">
+      <div class="accordion-title">Choisissez la date de votre consultation</div>
+      <!-- Version mobile (accordéon) -->
+      <div class="accordion-item">
+        <div class="accordion-header">
+          Mercredi 14 mai 
+          <span class="chevron">&#9662;</span>
+        </div>
+        <div class="accordion-content">
+            <!--durée 30min-->
+          <div class="slot-time" data-duration="30">15:00</div>
+          <div class="slot-time" data-duration="30">15:30</div>
+          <div class="slot-time" data-duration="30">16:00</div>
+          <div class="slot-time" data-duration="30">16:30</div>
+          <!--durée 45min-->
+          <div class="slot-time" data-duration="45">15:00</div>
+          <div class="slot-time" data-duration="45">15:45</div>
+          <div class="slot-time" data-duration="45">16:30</div>
+          <div class="slot-time" data-duration="45">17:15</div>
+          <!--durée 1heure-->
+          <div class="slot-time" data-duration="60">10:00</div>
+          <div class="slot-time" data-duration="60">11:00</div>
+          <div class="slot-time" data-duration="60">12:00</div>
+          <div class="slot-time" data-duration="60">13:00</div>
+        </div>
+      </div>
+      
+      <div class="accordion-item">
+        <div class="accordion-header">
+          Mercredi 11 juin 
+          <span class="chevron">&#9662;</span>
+        </div>
+        <div class="accordion-content">
+            <!--durée 30min-->
+            <div class="slot-time" data-duration="30">15:00</div>
+            <div class="slot-time" data-duration="30">15:30</div>
+            <div class="slot-time" data-duration="30">16:00</div>
+            <div class="slot-time" data-duration="30">16:30</div>
+            <!--durée 45min-->
+            <div class="slot-time" data-duration="45">15:00</div>
+            <div class="slot-time" data-duration="45">15:45</div>
+            <div class="slot-time" data-duration="45">16:30</div>
+            <div class="slot-time" data-duration="45">17:15</div>
+            <!--durée 1heure-->
+            <div class="slot-time" data-duration="60">10:00</div>
+            <div class="slot-time" data-duration="60">11:00</div>
+            <div class="slot-time" data-duration="60">12:00</div>
+            <div class="slot-time" data-duration="60">13:00</div>
+        </div>
+      </div>
+      
+      <div class="accordion-item">
+        <div class="accordion-header">
+          Jeudi 12 juin 
+          <span class="chevron">&#9662;</span>
+        </div>
+        <div class="accordion-content">
+            <!--durée 30min-->
+            <div class="slot-time" data-duration="30">15:00</div>
+            <div class="slot-time" data-duration="30">15:30</div>
+            <div class="slot-time" data-duration="30">16:00</div>
+            <div class="slot-time" data-duration="30">16:30</div>
+            <!--durée 45min-->
+            <div class="slot-time" data-duration="45">15:00</div>
+            <div class="slot-time" data-duration="45">15:45</div>
+            <div class="slot-time" data-duration="45">16:30</div>
+            <div class="slot-time" data-duration="45">17:15</div>
+            <!--durée 1heure-->
+            <div class="slot-time" data-duration="60">10:00</div>
+            <div class="slot-time" data-duration="60">11:00</div>
+            <div class="slot-time" data-duration="60">12:00</div>
+            <div class="slot-time" data-duration="60">13:00</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">
+          Lundi 16 juin 
+          <span class="chevron">&#9662;</span>
+        </div>
+        <div class="accordion-content">
+            <!--durée 30min-->
+            <div class="slot-time" data-duration="30">15:00</div>
+            <div class="slot-time" data-duration="30">15:30</div>
+            <div class="slot-time" data-duration="30">16:00</div>
+            <div class="slot-time" data-duration="30">16:30</div>
+            <!--durée 45min-->
+            <div class="slot-time" data-duration="45">15:00</div>
+            <div class="slot-time" data-duration="45">15:45</div>
+            <div class="slot-time" data-duration="45">16:30</div>
+            <div class="slot-time" data-duration="45">17:15</div>
+            <!--durée 1heure-->
+            <div class="slot-time" data-duration="60">10:00</div>
+            <div class="slot-time" data-duration="60">11:00</div>
+            <div class="slot-time" data-duration="60">12:00</div>
+            <div class="slot-time" data-duration="60">13:00</div>
+        </div>
+      </div>
+      
+      <div class="accordion-item">
+        <div class="accordion-header">
+          Mardi 17 juin 
+          <span class="chevron">&#9662;</span>
+        </div>
+        <div class="accordion-content">
+          <!--durée 30min-->
+          <div class="slot-time" data-duration="30">15:00</div>
+          <div class="slot-time" data-duration="30">15:30</div>
+          <div class="slot-time" data-duration="30">16:00</div>
+          <div class="slot-time" data-duration="30">16:30</div>
+          <!--durée 45min-->
+          <div class="slot-time" data-duration="45">15:00</div>
+          <div class="slot-time" data-duration="45">15:45</div>
+          <div class="slot-time" data-duration="45">16:30</div>
+          <div class="slot-time" data-duration="45">17:15</div>
+          <!--durée 1heure-->
+          <div class="slot-time" data-duration="60">10:00</div>
+          <div class="slot-time" data-duration="60">11:00</div>
+          <div class="slot-time" data-duration="60">12:00</div>
+          <div class="slot-time" data-duration="60">13:00</div>
+        </div>
+      </div>
+      
+      <div class="accordion-item">
+        <div class="accordion-header">
+          Vendredi 19 juin 
+          <span class="chevron">&#9662;</span>
+        </div>
+        <div class="accordion-content">
+           <!--durée 30min-->
+           <div class="slot-time" data-duration="30">15:00</div>
+           <div class="slot-time" data-duration="30">15:30</div>
+           <div class="slot-time" data-duration="30">16:00</div>
+           <div class="slot-time" data-duration="30">16:30</div>
+           <!--durée 45min-->
+           <div class="slot-time" data-duration="45">15:00</div>
+           <div class="slot-time" data-duration="45">15:45</div>
+           <div class="slot-time" data-duration="45">16:30</div>
+           <div class="slot-time" data-duration="45">17:15</div>
+           <!--durée 1heure-->
+           <div class="slot-time" data-duration="60">10:00</div>
+           <div class="slot-time" data-duration="60">11:00</div>
+           <div class="slot-time" data-duration="60">12:00</div>
+           <div class="slot-time" data-duration="60">13:00</div>
+        </div>
+      </div>
+      
+  
+      <button class="confirm-button">Confirmer le rendez-vous</button>
+    </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const isVisible = el => {
+    return el.offsetParent !== null || (el.style.display !== 'none' && el.style.visibility !== 'hidden');
+  };
+
+  const updateCounts = () => {
+    // Vue table (grille)
+    document.querySelectorAll('.table-view .date-column').forEach(column => {
+      const header = column.querySelector('.date-header');
+      const slots = column.querySelectorAll('.slot-time');
+      const visibleCount = Array.from(slots).filter(isVisible).length;
+
+      // Supprimer ancien compte s'il existe
+      const baseText = header.textContent.replace(/\(.*?\)/, '').trim();
+      header.textContent = `${baseText} (${visibleCount} créneaux disponibles)`;
+    });
+
+    // Accordéon
+    document.querySelectorAll('.accordion-item').forEach(item => {
+      const header = item.querySelector('.accordion-header');
+      const slots = item.querySelectorAll('.slot-time');
+      const visibleCount = Array.from(slots).filter(isVisible).length;
+
+      // Mettre à jour le texte de l'en-tête avec le nombre de créneaux disponibles
+      const baseText = header.textContent.split('(')[0].trim(); // Garde la partie avant "(...)
+      header.textContent = `${baseText} (${visibleCount} créneaux disponibles)`;
+    });
+  };
+
+  const filterSlots = (duration) => {
+    // Appliquer le filtre de durée aux créneaux
+    document.querySelectorAll('.slot-time').forEach(slot => {
+      const slotDuration = slot.dataset.duration;
+      slot.style.display = slotDuration === duration ? 'block' : 'none';
+    });
+    updateCounts();
+  };
+
+  // Gérer les clics sur les boutons de durée
+  document.querySelectorAll('.rdv-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const duration = btn.dataset.duration;
+      filterSlots(duration);
+    });
+  });
+
+  // Initialiser l'affichage des créneaux et mettre à jour les comptes au chargement
+  document.querySelectorAll('.slot-time').forEach(slot => {
+    slot.style.display = 'block'; // Afficher tous les créneaux au départ
+  });
+
+  updateCounts(); // Mise à jour initiale des comptes
+});
+</script>
+
+
+    <script>
+      
+  // vue table
+  document.addEventListener("DOMContentLoaded", function () {
+    const columns = Array.from(document.querySelectorAll("#schedule-table .date-column"));
+    const columnsPerWeek = 5; // nombre de jours par semaine
+    let currentWeek = 0;
+    const totalWeeks = Math.ceil(columns.length / columnsPerWeek);
+
+    function showWeek(weekIndex) {
+      // Masquer toutes les colonnes
+      columns.forEach(col => col.style.display = "none");
+
+      // Afficher les colonnes de la semaine demandée
+      const start = weekIndex * columnsPerWeek;
+      const end = start + columnsPerWeek;
+      for (let i = start; i < end && i < columns.length; i++) {
+        columns[i].style.display = "block";
+      }
+    }
+
+    // Navigation
+    document.getElementById("prev-week").addEventListener("click", function () {
+      if (currentWeek > 0) {
+        currentWeek--;
+        showWeek(currentWeek);
+      }
+    });
+
+    document.getElementById("next-week").addEventListener("click", function () {
+      if (currentWeek < totalWeeks - 1) {
+        currentWeek++;
+        showWeek(currentWeek);
+      }
+    });
+
+    // Affiche la première semaine au chargement
+    showWeek(currentWeek);
+  });
+
+      const durationButtons = document.querySelectorAll('.rdv-btn');
+      const allSlots = document.querySelectorAll('.slot-time');
+      const headers = document.querySelectorAll('.accordion-header');
+  
+      let selectedDuration = null;
+  
+      // Choix de la durée depuis la première étape
+      durationButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          durationButtons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          selectedDuration = btn.dataset.duration;
+  
+          allSlots.forEach(slot => {
+            if (slot.dataset.duration === selectedDuration) {
+              slot.style.display = 'inline-block';
+            } else {
+              slot.style.display = 'none';
+            }
+          });
+        });
+      });
+      //effet sur le bouton 
+       document.querySelectorAll('.rdv-btn').forEach(button => {
+    button.addEventListener('click', () => {
+      document.querySelectorAll('.rdv-btn').forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+    });
+  });
+  
+      // Accordéons
+      // Durée sélectionnée
+document.querySelectorAll('.rdv-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.rdv-btn').forEach(b => b.classList.remove('selected'));
+    btn.classList.add('selected');
+  });
+});
+
+// Type de consultation
+document.querySelectorAll('.type-consult button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.type-consult button').forEach(b => b.classList.remove('selected'));
+    btn.classList.add('selected');
+  });
+});
+
+// Création d'un système d'accordéon simple
+document.querySelectorAll('.accordion-header').forEach(header => {
+  header.addEventListener('click', () => {
+    const content = header.nextElementSibling;
+    const isOpen = content.style.display === 'block';
+    document.querySelectorAll('.accordion-content').forEach(c => c.style.display = 'none');
+    document.querySelectorAll('.accordion-header .chevron').forEach(c => c.style.transform = 'rotate(0deg)');
+    if (!isOpen) {
+      content.style.display = 'block';
+      header.querySelector('.chevron').style.transform = 'rotate(180deg)';
+    }
+  });
+});
+
+// Sélection des créneaux
+document.querySelectorAll('.slot-time').forEach(slot => {
+  slot.addEventListener('click', () => {
+    document.querySelectorAll('.slot-time').forEach(s => s.classList.remove('selected'));
+    slot.classList.add('selected');
+  });
+});
+
+    </script>
+  
+  
+</body>
+</html>
+
+
+  </main>
+   <!--FOOTER-->
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>Explorez</h3>
+            <ul>
+              <li><a href="#">A propos</a></li>
+              <li><a href="#">Tarifs</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Se connecter</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Aide</h3>
+            <ul>
+              <li><a href="FAQ.html">Foire aux questions</a></li>
+              <li><a href="#">Nos champs d’actions</a></li>
+              <li><a href="#">Céline, la fondatrice</a></li>
+              <li><a href="#">Rejoindre notre équipe</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Presse</h3>
+            <ul>
+              <li><a href="#">Communiqué de presse</a></li>
+              <li><a href="#">Dossier de presse</a></li>
+              <li><a href="#">Kit média StopTCA</a></li>
+              <li><a href="#">Les entrevues</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Plateforme</h3>
+            <ul>
+              <li><a href="#">Conditions générales d’utilisations</a></li>
+              <li><a href="#">Mentions légales et politique de confidentialité</a></li>
+              <li><a href="#">Espace de préférences des 🍪</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>        
+        
+        <div class="footer-bottom">
+          <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="back-to-top">↑ Haut</button>
+          <div class="social-icons">
+            <a href="#"><img src="image/icons8-facebook-nouveau.svg" alt="Facebook" /></a>
+            <a href="#"><img src="image/icons8-instagram-3.svg" alt="Instagram" /></a>
+            <a href="#"><img src="image/icons8-tiktok-3.svg" alt="TikTok" /></a>
+            <a href="#"><img src="image/icons8-whatsapp.svg" alt="WhatsApp" /></a>
+          </div>
+  
+          <p>Tous droits réservés 2024 © StopTCA ensemble franchissons le pas</p>
+        </div>
+    </footer>
+    <script>
+        /*=============================header ================== */
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+        menuToggle.addEventListener('click', function() {
+            nav.classList.toggle('active');
+        });
+        /* FOOTER*/
+        document.addEventListener("DOMContentLoaded", () => {
+            const backToTopBtn = document.querySelector('.back-to-top');
+            if (!backToTopBtn) return;
+            // Montrer ou cacher le bouton selon le scroll
+            window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+        // Scroll vers le haut au clic
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    });
+    </script>
+  </body>
+  </html>
+  
+  

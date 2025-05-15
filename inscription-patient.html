@@ -1,0 +1,217 @@
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maquette - StopTCA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="image/StopTCA-2.png" /></a>
+        </div>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      
+        <nav id=" navbar-menu">
+          <ul>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Tarifs</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Rejoindre notre équipe</a></li>
+          </ul>
+        </nav>
+      
+        <div class="nav-buttons">
+          <a href="trouver_praticien.html"><button class="btn-patient">Trouver un praticien</button></a>
+          <a href="Connexion.html"><button class="btn-neutral">Se connecter</button></a>
+      
+          <!-- Bouton de traduction Google (personnalisé) -->
+          <div id="google_translate_element" class="translate-widget"></div>
+        </div>
+      </header>
+      
+    <main>
+    <!--TITRE-->
+     <section class="inscription-patient-titre">
+         <h2>Commencez votre parcours d’accompagnement personnalisé</h2>
+         <p>Bienvenue dans votre espace patient sur StopTCA. Notre plateforme vous offre un soutien spécialisé pour surmonter les troubles du comportement alimentaire, avec des consultations accessibles par visioconférence ou téléphone. Ici, vous pouvez facilement vous inscrire ou vous connecter pour accéder à nos services personnalisés et débuter votre parcours de guérison en toute confidentialité.</p>
+        </section>
+    <!--FORMULAIRE-->
+     <section class="form-section">
+  <div class="form-container">
+     <h2>
+     <img src="image autre/StopTCA_Pluie.svg" class="logo-formulaire">
+    <br>
+   Rejoindre la plateforme</h2>
+
+    <form>
+      <div class="form-grid">
+        <input type="text" placeholder="Nom" required />
+        <input type="text" placeholder="Prénom" required />
+
+        <input type="date" placeholder="Date de naissance" required />
+        <input type="tel" placeholder="Numéro de téléphone" required />
+
+        <input type="email" placeholder="Adresse électronique" required />
+        <input type="text" placeholder="Ville" required />
+        <input type="text" placeholder="Code postal" required />
+
+        <div class="password-wrapper">
+          <input type="password" placeholder="Mot de passe" required />
+          <span class="eye-icon">👁️</span>
+        </div>
+
+        <div class="password-wrapper">
+          <input type="password" placeholder="Confirmer le mot de passe" required />
+          <span class="eye-icon">👁️</span>
+        </div>
+      </div>
+
+      <div class="recaptcha">
+        <input type="checkbox" />
+        <label>Je ne suis pas un robot</label>
+      </div>
+
+      <div class="checkbox-group">
+        <label><input type="checkbox" /> Je déclare avoir pris connaissance des conditions générales d’utilisations et les accepter</label>
+
+        <label><input type="checkbox" /> En cochant cette case j'accepte la politique de confidentialité de StopTCA, la RGPD, et que mes données soient utilisées pour faciliter mon accompagnement. Pour connaître et exercer vos droits, notamment de retrait de votre consentement à l'utilisation des données collectées, veuillez consulter notre politique de confidentialité</label>
+
+        <label><input type="checkbox" /> En cochant cette case, j'accepte que les différents praticiens avec lesquels je prends rendez-vous travaillent ensemble en équipe et partagent certaines de mes informations personnelles pour me proposer un travail complet et pluridisciplinaire</label>
+      </div>
+
+      <button type="submit" class="submit-btn">Valider</button>
+    </form>
+  </div>
+</section>
+
+   <!---TEMOIGNAGES-->
+      <section class="testimonials-section">
+        <h3 class="subtitle">Témoignages</h3>
+        <h2 class="main-title">Ils Ont Trouvé du Soutien chez StopTCA : Écoutez leurs  <span class="manuscrit">témoignages</span> </h2>
+        <p class="description">Explorez comment StopTCA aide de nombreuses personnes et leurs proches confrontés aux troubles du comportement alimentaire. Chaque témoignage met en lumière les bénéfices de notre accompagnement et comment nous contribuons à améliorer leur quotidien.</p>
+        <!-- Elfsight Google Reviews | WIDGET -->
+         <script src="https://static.elfsight.com/platform/platform.js" async></script><div class="elfsight-app-7eb4c059-2bf5-4d46-b4ee-ca2a2ff301c3" data-elfsight-app-lazy></div>
+      </section>
+      
+      
+<!--TEMOIGNAGE VIDEO-->      
+<section class="inscription-video-testimonial">
+    <h2>"J'ai pu surmonter mes Tcas grâce à StopTCA"</h2>
+  
+    <div class="inscription-video-wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/YRgwMYr_AbA"
+        title="Témoignage Florence"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
+  
+    <p class="inscription-caption">Découvrez le témoignage de Florence</p>
+  </section>
+
+         <!--NEWSLETTER-->
+<section class="newsletter-section">
+  <div class="newsletter-container">
+    <div class="newsletter-left">
+      <h1><span class="brand">STOPTCA</span><br>Car manger ne devrait pas être une <strong>souffrance.</strong></h1>
+    </div>
+    <div class="newsletter-right">
+      <h3>Inscrivez-vous à notre<br>Newsletter</h3>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Saisissez votre email" required>
+        <label class="info-note">
+          <input type="checkbox"> Aucune information ne sera divulguée à tiers
+        </label>
+        <button type="submit">📩 Souscrire</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+
+    </main>
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>Explorez</h3>
+            <ul>
+              <li><a href="#">A propos</a></li>
+              <li><a href="#">Tarifs</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Se connecter</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Aide</h3>
+            <ul>
+              <li><a href="FAQ.html">Foire aux questions</a></li>
+              <li><a href="#">Nos champs d’actions</a></li>
+              <li><a href="#">Céline, la fondatrice</a></li>
+              <li><a href="#">Rejoindre notre équipe</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Presse</h3>
+            <ul>
+              <li><a href="#">Communiqué de presse</a></li>
+              <li><a href="#">Dossier de presse</a></li>
+              <li><a href="#">Kit média StopTCA</a></li>
+              <li><a href="#">Les entrevues</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Plateforme</h3>
+            <ul>
+              <li><a href="#">Conditions générales d’utilisations</a></li>
+              <li><a href="#">Mentions légales et politique de confidentialité</a></li>
+              <li><a href="#">Espace de préférences des 🍪</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>        
+        
+        <div class="footer-bottom">
+          <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="back-to-top">↑ Haut</button>
+          <div class="social-icons">
+            <a href="#"><img src="image/icons8-facebook-nouveau.svg" alt="Facebook" /></a>
+            <a href="#"><img src="image/icons8-instagram-3.svg" alt="Instagram" /></a>
+            <a href="#"><img src="image/icons8-tiktok-3.svg" alt="TikTok" /></a>
+            <a href="#"><img src="image/icons8-whatsapp.svg" alt="WhatsApp" /></a>
+          </div>
+  
+          <p>Tous droits réservés 2024 © StopTCA ensemble franchissons le pas</p>
+        </div>
+    </footer>
+
+     <!--JS-->
+     <script>
+       const faqItems = document.querySelectorAll('.faq-item');
+     
+       faqItems.forEach(item => {
+         const question = item.querySelector('.faq-question');
+         question.addEventListener('click', () => {
+           const isOpen = item.classList.contains('open');
+           faqItems.forEach(i => i.classList.remove('open'));
+           if (!isOpen) item.classList.add('open');
+         });
+       });
+
+       /*=============================header ================== */
+       const menuToggle = document.querySelector('.menu-toggle');
+       const nav = document.querySelector('nav');
+       menuToggle.addEventListener('click', function() {
+        nav.classList.toggle('active');
+    });
+    /* FOOTER*/
+    document.querySelector('.back-to-top').addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+     </script>
+   </body>
+   </html>

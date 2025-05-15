@@ -1,0 +1,424 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;   
+  font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+ /* HEADER */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.logo img {
+  max-height: 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #6EC4D8;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0%;
+  background-color: #6EC4D8;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+nav a:hover {
+  color: #9ddbe8;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.nav-buttons button {
+  margin-left: 15px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Bouton pour patients */
+.btn-patient {
+  background: linear-gradient(to right, #FA7C92, #f69dac);
+  color: white;
+  border: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-patient:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Bouton fonction neutre */
+.btn-neutral {
+  background: transparent;
+  border: 2px solid #9ddbe8;
+  color: #9ddbe8;
+}
+
+.btn-neutral:hover {
+  background-color: #9ddbe8;
+  color: white;
+}
+
+.translate-widget {
+  margin-left: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+.translate-widget select {
+  font-weight: 500;
+  cursor: pointer;
+  padding: 5px;
+  appearance: none;
+  outline: none;
+}
+
+/* Optionnel : supprimer logo Google */
+.goog-logo-link,
+.goog-te-gadget span {
+  display: none !important;
+}
+
+/* Réduire espace du widget */
+.goog-te-gadget {
+  font-size: 0 !important;
+}
+
+/* Menu burger caché par défaut */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+/* Responsive Navbar */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 20px 30px;
+  }
+
+  .logo img {
+    max-height: 45px;
+  }
+
+  nav ul {
+    gap: 20px;
+  }
+
+  .nav-buttons button {
+    padding: 8px 16px;
+  }
+
+  .translate-widget select {
+    font-size: 12px;
+  }
+}
+
+/* Mobile First (<=768px) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 15px 30px;
+  }
+
+  .logo img {
+    max-height: 40px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    padding: 0;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .nav-buttons {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .nav-buttons button {
+    flex: 1 1 auto;
+    max-width: 200px;
+    text-align: center;
+  }
+  
+
+  .nav-buttons button,
+  .translate-widget {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+  }
+
+  nav.active {
+    display: flex;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  nav ul {
+    gap: 10px;
+  }
+
+  .nav-buttons button {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+
+  .logo img {
+    max-height: 35px;
+  }
+
+  .translate-widget select {
+    font-size: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta .btn {
+    width: 100%; 
+    max-width: 300px;
+  }
+}
+
+/* ==========--------------PAGE FAQ-----------=================*/
+.faq-page-title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #6EC4D8;
+  }
+  
+  .faq h2 {
+    margin-top: 30px;
+  }
+  
+  .faq {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .faq-item {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .faq-question {
+    background-color: transparent;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .faq-question::after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 22px;
+    transition: transform 0.3s ease;
+    color: #6EC4D8;
+  }
+  
+  .faq-item.open .faq-question::after {
+    transform: rotate(45deg);
+  }
+  
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #FBFAFA;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 0 20px;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+  }
+  
+  .faq-item.open .faq-answer {
+    max-height: 500px;
+    padding: 15px 20px 20px;
+  }
+  
+  .faq-item.open .faq-answer {
+    max-height: 300px; 
+    overflow-y: auto; 
+  }
+  
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 24px;
+    }
+  
+    .faq-question {
+      font-size: 16px;
+    }
+  
+    .faq-answer {
+      font-size: 14px;
+    }
+  
+    .faq-item.open .faq-answer {
+      max-height: 200px; 
+      overflow-y: auto; 
+    }
+  }
+    /*FOOTER*/
+    .footer {
+        background: linear-gradient(to right, #8dd6e9, #c6e3c1);
+        color: white;
+        padding: 40px 20px;
+        font-family: sans-serif;
+      }
+      
+      .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      
+      .footer-column {
+        flex: 1 1 200px;
+        margin: 10px;
+      }
+      
+      .footer-column h3 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+      }
+      
+      .footer-column ul {
+        list-style: none;
+        padding: 0;
+      }
+      
+      .footer-column ul li {
+        margin-bottom: 8px;
+      }
+      
+      .footer-column ul li a {
+        text-decoration: none;
+        color: white;
+        opacity: 0.9;
+      }
+      
+      .footer-column ul li a:hover {
+        text-decoration: underline;
+      }
+      
+      .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        padding-top: 20px;
+        margin-top: 20px;
+      }
+      
+      .social-icons a {
+        margin: 0 10px;
+      }
+      
+      .social-icons img {
+        width: 24px;
+        height: 24px;
+        filter: brightness(0) invert(1);
+      }
+      .footer .back-to-top {
+        margin-top: 15px;
+        align-self: flex-end;
+        background-color: white;
+        color: #5c9e9b;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 25px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.3s;
+      }
+      
+      .footer .back-to-top:hover {
+        background-color: #f0f0f0;
+      }

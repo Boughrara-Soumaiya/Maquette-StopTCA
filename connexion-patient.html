@@ -1,0 +1,134 @@
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maquette - StopTCA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="connexion.css" />
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="image/StopTCA-2.png" /></a>
+        </div>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      
+        <nav id=" navbar-menu">
+          <ul>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Tarifs</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Rejoindre notre équipe</a></li>
+          </ul>
+        </nav>
+      
+        <div class="nav-buttons">
+          <a href="trouver_praticien.html"><button class="btn-patient">Trouver un praticien</button></a>
+          <a href="Connexion.html"><button class="btn-neutral">Se connecter</button></a>
+      
+          <!-- Bouton de traduction Google (personnalisé) -->
+          <div id="google_translate_element" class="translate-widget"></div>
+        </div>
+      </header>
+      
+    <main>
+    <section class="connexion-patient-section-container">
+      <!-- Partie Patient -->
+    <div class="connexion-patient-section patient">
+      <div class="connexion-patient-section-title">Espace Patient</div>
+      <div class="connexion-patient-login-box">
+         <h2>J'ai <strong>DÉJÀ</strong> un compte</h2>
+        <img src="image autre/StopTCA_Pluie.svg" alt="Logo STOP TCA" class="logo-img" />
+        <input type="email" placeholder="Adresse électronique" />
+        <input type="password" placeholder="Mot de passe" />
+        <label><input type="checkbox" /> Se souvenir de mon identifiant</label>
+        <a href="#">Mot de passe oublié ?</a>
+        <button>👌 Se connecter</button>
+        <p style="margin-top: 16px; font-size: 14px;">
+          👉 Nouveau patient ?
+          <a href="inscription-patient.html" style="color: inherit; font-weight: bold;">Créer un compte</a></p>
+      </div>
+    </div>
+  </section>
+    </main>
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>Explorez</h3>
+            <ul>
+              <li><a href="#">A propos</a></li>
+              <li><a href="#">Tarifs</a></li>
+              <li><a href="#">Blogs</a></li>
+              <li><a href="#">Se connecter</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Aide</h3>
+            <ul>
+              <li><a href="FAQ.html">Foire aux questions</a></li>
+              <li><a href="#">Nos champs d’actions</a></li>
+              <li><a href="#">Céline, la fondatrice</a></li>
+              <li><a href="#">Rejoindre notre équipe</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Presse</h3>
+            <ul>
+              <li><a href="#">Communiqué de presse</a></li>
+              <li><a href="#">Dossier de presse</a></li>
+              <li><a href="#">Kit média StopTCA</a></li>
+              <li><a href="#">Les entrevues</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Plateforme</h3>
+            <ul>
+              <li><a href="#">Conditions générales d’utilisations</a></li>
+              <li><a href="#">Mentions légales et politique de confidentialité</a></li>
+              <li><a href="#">Espace de préférences des 🍪</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>        
+        
+        <div class="footer-bottom">
+          <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="back-to-top">↑ Haut</button>
+          <div class="social-icons">
+            <a href="#"><img src="image/icons8-facebook-nouveau.svg" alt="Facebook" /></a>
+            <a href="#"><img src="image/icons8-instagram-3.svg" alt="Instagram" /></a>
+            <a href="#"><img src="image/icons8-tiktok-3.svg" alt="TikTok" /></a>
+            <a href="#"><img src="image/icons8-whatsapp.svg" alt="WhatsApp" /></a>
+          </div>
+  
+          <p>Tous droits réservés 2024 © StopTCA ensemble franchissons le pas</p>
+        </div>
+    </footer>
+
+     <!--JS-->
+     <script>
+       const faqItems = document.querySelectorAll('.faq-item');
+     
+       faqItems.forEach(item => {
+         const question = item.querySelector('.faq-question');
+         question.addEventListener('click', () => {
+           const isOpen = item.classList.contains('open');
+           faqItems.forEach(i => i.classList.remove('open'));
+           if (!isOpen) item.classList.add('open');
+         });
+       });
+
+       /*=============================header ================== */
+       const menuToggle = document.querySelector('.menu-toggle');
+       const nav = document.querySelector('nav');
+       menuToggle.addEventListener('click', function() {
+        nav.classList.toggle('active');
+    });
+    /* FOOTER*/
+    document.querySelector('.back-to-top').addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+     </script>
+   </body>
+   </html>
