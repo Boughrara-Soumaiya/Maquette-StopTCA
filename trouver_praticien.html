@@ -43,11 +43,65 @@
             <option>Ne pas afficher les praticiens qui ne prenent pas de nouveau patient</option>
           </select>
         </div>
-        
-        <div class="links">
-          <a href="#">📘 Comment prendre rendez-vous ?</a>
-          <a href="#">📘 Comment déplacer ou annuler un rendez-vous ?</a>
-        </div>
+        <!-- Boutons d'ouverture -->
+<div class="text-center" style="text-align: center; margin-top: 1.5rem;">
+  <button class="button" onclick="document.getElementById('modal1').style.display='flex'">
+    📘 Comment prendre rendez-vous ?
+  </button>
+  <button class="button" onclick="document.getElementById('modal2').style.display='flex'">
+    📘 Comment déplacer ou annuler un rendez-vous ?
+  </button>
+</div>
+
+<!-- Modal 1 -->
+<div class="modal" id="modal1" onclick="if(event.target == this) this.style.display='none'">
+  <div class="modal-content">
+    <button class="modal-close" onclick="document.getElementById('modal1').style.display='none'">&times;</button>
+    <h2>Comment prendre rendez-vous ?</h2>
+    <ol>
+      <li>Allez sur la page de nos praticiens et <strong>sélectionnez</strong> notre expert.</li>
+      <li><strong>Réservez</strong> votre rendez-vous depuis le profil du praticien, selon les disponibilités affichées sur son calendrier en ligne.</li>
+      <li><strong>Payez en ligne</strong> par carte bancaire dans un espace sécurisé.</li>
+      <li><strong>Confirmation par courriel</strong> de votre rendez-vous.</li>
+      <li><strong>Le praticien vous contacte à l'heure du rendez-vous</strong> ou vous cliquez sur le lien de visioconférence (si vous avez choisi l’option visiophonique).</li>
+      <li>Si rendez-vous par <strong>visioconférence</strong>, <strong>le lien est dans le courriel de confirmation</strong> et dans votre espace patient.</li>
+    </ol>
+    <p style="margin-top: 10px; font-size: 0.9em;">Aucune installation particulière n’est nécessaire, sauf une bonne connexion internet.</p>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal" id="modal2" onclick="if(event.target == this) this.style.display='none'">
+  <div class="modal-content">
+    <button class="modal-close" onclick="document.getElementById('modal2').style.display='none'">&times;</button>
+    <p><strong>Si vous souhaitez annuler ou déplacer votre rendez-vous dans un délai supérieur à 48 heures</strong> avant la séance prévue, vous pouvez le faire <strong>directement depuis votre espace personnel</strong>.</p>
+    <p>En cas <strong>d'annulation</strong> dans ce délai (délai supérieur à 48 heures), vous serez automatiquement <strong>remboursé intégralement</strong>.</p>
+    <p>Pour toute demande effectuée <strong>moins de 48 heures</strong> avant la séance prévue, <strong>aucun remboursement ni report ne sera possible</strong>.</p>
+
+    <div style="display: flex; gap: 30px; margin-top: 30px; flex-wrap: wrap;">
+      <div style="flex: 1; min-width: 250px;">
+        <h3 style="color: #ff8080;">Déplacer mon rendez-vous</h3>
+        <ol style="padding-left: 20px;">
+          <li>Accédez à votre espace membre.</li>
+          <li>Cliquez sur le tableau de bord.</li>
+          <li>Consultez les prochains rendez-vous programmés.</li>
+          <li>Dans la ligne correspondant à votre rendez-vous, repérez le champ <strong>‘MODIFIER’</strong> et choisissez un nouveau créneau selon les disponibilités du praticien.</li>
+          <li>Veuillez noter que cette fonction est disponible <strong>uniquement pour les rendez-vous prévus dans plus de 48 heures</strong> et qu’il n’est <em>pas possible de déplacer un rendez-vous plus de deux fois</em>.</li>
+        </ol>
+      </div>
+      <div style="flex: 1; min-width: 250px;">
+        <h3 style="color: #ff8080;">Annuler mon rendez-vous</h3>
+        <ol style="padding-left: 20px;">
+          <li>Rendez-vous dans votre espace membre.</li>
+          <li>Accédez au tableau de bord.</li>
+          <li>Consultez les prochains rendez-vous à venir.</li>
+          <li>Sur la ligne correspondant à votre rendez-vous, repérez le champ <strong>‘MODIFIER’</strong>.</li>
+          <li>Cliquez sur <strong>‘ANNULER’</strong>. Veuillez noter que cette fonction est disponible <strong>uniquement pour les rendez-vous prévus dans plus de 48 heures</strong>.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
   </section>
   <!--LISTE PRATICIEN-->
   <section class="practitioner-list">

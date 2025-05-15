@@ -262,9 +262,16 @@ nav a:hover::after {
   flex-direction: column;
 }
 
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
 .patient {
-  background-color: #f0faff;
-  color: #00acc1;
+   background: linear-gradient(96.14deg, #6EC4D8 -10.84%, #FFF7C0 146.74%);
+  color: #6EC4D8;
 }
 
 .logo-img {

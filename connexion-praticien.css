@@ -260,10 +260,15 @@ nav a:hover::after {
   padding: 40px 20px;
   flex-direction: column;
 }
-
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
 .praticien {
-  background-color: #fff0f5;
-  color: #e91e63;
+ background:  linear-gradient(96.14deg, #FA7C92 -10.84%, #FFF7C0 146.74%) ;
+  color: #FA7C92;
 }
 
 .logo-img {

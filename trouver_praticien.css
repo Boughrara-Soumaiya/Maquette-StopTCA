@@ -295,23 +295,98 @@ nav a:hover::after {
     max-width: 100%;
     box-sizing: border-box;
   }
-  
-  .search-container.links {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    text-align: center;
+  /*LINK*/
+  .button {
+    background-color: transparent;
+    border: none;
+    color: #FA7C92; 
+    padding: 10px 22px;
+    margin: 8px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+ /* style modal*/
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: hidden; 
   }
   
-  .search-container.links a {
-    color: #0066cc;
-    text-decoration: none;
+  .modal-content {
+    background-color: #fff;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;              
+    max-width: 800px;        
+    max-height: 80vh;
+    padding: 40px 35px;      
+    border-radius: 12px;
+    overflow-y: auto;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  }
+  
+  .modal-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #f69dac;
+    font-weight: bold;
+  }
+  
+  .modal-content::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .modal-content::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+  }
+  
+  .modal-content h2 {
+    margin-top: 0;
+    font-size: 1.6rem;
+    color: #FA7C92;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .modal-content p {
+    margin-bottom: 16px;
+    line-height: 1.7;
+    color: #555;
     font-size: 1rem;
   }
   
-  .search-container.links a:hover {
-    text-decoration: underline;
+  .modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #f69dac;
+    transition: color 0.2s;
   }
+  
+  .modal-close:hover {
+    color: #5c9e9b;
+  }
+
+
   
   /* Responsive design: écrans ≥ 600px */
   @media (min-width: 600px) {
