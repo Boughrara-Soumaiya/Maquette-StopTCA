@@ -12,14 +12,8 @@ Ce dépôt contient une maquette web développée dans le cadre de mon stage che
 
 - **HTML5**  
 - **CSS3**  
-- **JavaScript (vanilla)**
+- **JavaScript**
 
-## Contenu de la maquette
-
-- Page d’accueil avec présentation de l’entreprise  
-- Ressources, témoignages et actualités  
-- Navigation dynamique  
-- Responsive design
 
 ## Autorisation
 
