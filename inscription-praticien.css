@@ -637,13 +637,6 @@ textarea {
   }
 }
 /*PLATEFORM*/
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333;
-  background-color: #fff;
-}
 
 .platform-section {
   padding: 60px 20px;
