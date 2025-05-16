@@ -1475,7 +1475,7 @@ nav a:hover::after {
   font-weight: 300;
 }
 
-.carousel-container {
+.web-carousel-container {
   position: relative;
   overflow: hidden;
   max-width: 100%;
