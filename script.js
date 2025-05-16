@@ -118,25 +118,3 @@ const nav = document.querySelector('nav');
 menuToggle.addEventListener('click', function() {
   nav.classList.toggle('active');
 });
-
-//FOOTER
-  document.addEventListener('DOMContentLoaded', () => {
-    const backToTopBtn = document.querySelector('.back-to-top');
-
-    // Affiche ou cache le bouton selon le scroll
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 300) {
-        backToTopBtn.style.display = 'block';
-      } else {
-        backToTopBtn.style.display = 'none';
-      }
-    });
-
-    // Scroll fluide vers le haut quand on clique
-    backToTopBtn.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  });
-
-
-

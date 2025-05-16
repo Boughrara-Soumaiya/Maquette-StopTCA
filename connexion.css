@@ -475,19 +475,4 @@ nav a:hover::after {
     height: 24px;
     filter: brightness(0) invert(1);
   }
-  .footer .back-to-top {
-    margin-top: 15px;
-    align-self: flex-end;
-    background-color: white;
-    color: #5c9e9b;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 25px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: background-color 0.3s;
-  }
   
-  .footer .back-to-top:hover {
-    background-color: #f0f0f0;
-  }
