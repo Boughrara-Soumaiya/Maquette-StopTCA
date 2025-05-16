@@ -282,7 +282,7 @@ nav a:hover::after {
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: 10px;
   }
   
   .search-bar input[type="text"],
@@ -300,10 +300,10 @@ nav a:hover::after {
     background-color: transparent;
     border: none;
     color: #FA7C92; 
-    padding: 10px 22px;
     margin: 8px;
     cursor: pointer;
     user-select: none;
+     font-size: 20px;
   }
 
  /* style modal*/
