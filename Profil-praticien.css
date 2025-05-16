@@ -684,9 +684,9 @@ nav a:hover::after {
 }
 
 .type-consult button.selected {
-    background-color: #f9f9f9;
-    color: #666 ;
-    border-color: #6EC4D8;
+    background-color: #fdaebb;
+    color: #fff;
+    border-color: #FA7C92;
 }
 
 /* ACCORDÉON */
