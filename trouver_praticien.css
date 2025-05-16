@@ -441,7 +441,7 @@ nav a:hover::after {
 .practitioner-list .info h3 {
    margin: 0.25rem 0 0.25rem;
   font-size: 1.1rem;
-  color: #e6457a;
+  color: #FA7C92;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -464,9 +464,9 @@ nav a:hover::after {
   padding: 0.4rem 1rem;
   font-size: 0.8rem;
   border-radius: 20px;
-  border: 1px solid #e6457a;
+  border: 1px solid #FA7C92;
   background-color: transparent;
-  color: #e6457a;
+  color:#FA7C92;
   opacity: 0.8;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -474,7 +474,7 @@ nav a:hover::after {
 
 .practitioner-list .btn-primary:hover,
 .practitioner-list .btn-secondary:hover {
-  background-color: #e6457a;
+  background-color: #FA7C92;
   color: white;
   opacity: 1;
 }
@@ -492,8 +492,8 @@ nav a:hover::after {
   
   .pagination button {
     background: white;
-    border: 1px solid #e6457a;
-    color: #e6457a;
+    border: 1px solid #FA7C92;
+    color: #FA7C92;
     border-radius: 50%;
     width: 2.2rem;
     height: 2.2rem;
@@ -504,7 +504,7 @@ nav a:hover::after {
   
   .pagination .active,
   .pagination button:hover {
-    background: #e6457a;
+    background: #FA7C92;
     color: white;
   }
   
