@@ -655,19 +655,6 @@ document.querySelectorAll('.slot-time').forEach(slot => {
         menuToggle.addEventListener('click', function() {
             nav.classList.toggle('active');
         });
-        /* FOOTER*/
-        document.addEventListener("DOMContentLoaded", () => {
-            const backToTopBtn = document.querySelector('.back-to-top');
-            if (!backToTopBtn) return;
-            // Montrer ou cacher le bouton selon le scroll
-            window.addEventListener('scroll', () => {
-            if (window.scrollY > 300) {
-                backToTopBtn.classList.add('show');
-            } else {
-                backToTopBtn.classList.remove('show');
-            }
-        });
-    });
     </script>
   </body>
   </html>
