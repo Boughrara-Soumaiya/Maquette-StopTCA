@@ -16,11 +16,6 @@ Il s'agit d'une **refonte partielle** de l'interface existante, intégrant uniqu
 - **CSS3**  
 - **JavaScript**
 
-
-## Autorisation
-
-Ce projet a été réalisé dans un cadre pédagogique. **StopTCA m’a donné son accord pour conserver et publier cette maquette à des fins de démonstration** (portfolio, candidatures, etc.).
-
 ## Remarques
 
 Ce projet est une maquette : certaines fonctionnalités peuvent être fictives ou partiellement implémentées. Il s’agit avant tout d’une base visuelle et structurelle pour illustrer la future direction du site.
