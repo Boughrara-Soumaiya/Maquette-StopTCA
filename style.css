@@ -3,12 +3,11 @@
     padding: 0;
     box-sizing: border-box;
   }
- @font-face {
+@font-face {
   font-family: 'Mia Love';
-  src: url('fonts/FontsFree-Net-Mia-Love.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+  src: url('fonts/mia-love.ttf') format('truetype');
 }
+
 
 .styleMia {
   font-family: 'Mia Love';
