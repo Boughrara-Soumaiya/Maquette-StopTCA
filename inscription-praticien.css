@@ -491,7 +491,7 @@ textarea {
 .notre-histoire {
   background-color: #f9f9f9;
   padding: 60px 20px;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #333;
 }
 
@@ -504,7 +504,6 @@ textarea {
 }
 
 .notre-histoire .intro h2 span strong {
-  font-family: 'Brush Script MT', cursive;
   font-weight: normal;
   color: #001f3f;
 }
