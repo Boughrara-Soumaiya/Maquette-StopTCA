@@ -5,6 +5,17 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Mia Love';
+  src: url('fonts/FontsFree-Net-Mia-Love.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.styleMia {
+  font-family: 'Mia Love';
+}
+
 html, body {
   height: 100%;
   overflow-x: hidden;
